@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/enterorEditCurrentJobDetailsID"
+        android:layout_width="354dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginBottom="143dp"
+        android:onClick="enterOrEditCurrentJob"
+        android:text="Enter or Edit Current Job Details"
+        app:layout_constraintBottom_toTopOf="@+id/adjustComparisonSettingsID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/enterJobOfferID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enterJobOffer"
+        android:text="Enter Job Offer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <Button
+        android:id="@+id/adjustComparisonSettingsID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="comparisonSetting"
+        android:text="Adjust Comparison Settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/compareJobOfferID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:onClick="compareOffer"
+        android:text="Compare Job Offer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adjustComparisonSettingsID" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

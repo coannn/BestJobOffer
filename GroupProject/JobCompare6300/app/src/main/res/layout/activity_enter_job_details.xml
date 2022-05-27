@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterJobDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:text="Enter Title"/>
+        <EditText
+            android:id="@+id/editTextEnterTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+        <TextView
+            android:id="@+id/textViewCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Company" />
+        <EditText
+            android:id="@+id/editTextEnterCompany"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewEnterCity"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Enter City" />
+            <TextView
+                android:id="@+id/textViewEnterState"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Enter State" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/editTextEnterCity"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="" />
+            <EditText
+                android:id="@+id/editTextEnterState"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="" />
+        </LinearLayout>
+
+        <TextView
+        android:id="@+id/textViewEnterCostOfLiving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Cost Of Living" />
+
+        <EditText
+            android:id="@+id/editTextEnterCostOfLiving"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewEnterYearlySalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Yearly Salary" />
+
+        <EditText
+            android:id="@+id/editTextEnterYearlySalary"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewEnterYearlyBonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Yearly Bonus"/>
+
+        <EditText
+            android:id="@+id/editTextEnterYearlyBonus"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewEnterRetirementBenefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Retirement Benefit" />
+
+        <EditText
+            android:id="@+id/editTextEnterRetirementBenefit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewEnterRelocationStipend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Relocation Stipend" />
+
+        <EditText
+            android:id="@+id/editTextEnterRelocationStipend"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewEnterRestrictedStockUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Restricted Stock Unit"/>
+
+        <EditText
+            android:id="@+id/editTextEnterRestrictedStockUnit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/saveCurrentJob"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:onClick="saveCurrentJob"
+                android:text="Save Job Details" />
+
+            <Button
+                android:id="@+id/cancelJobOfferID"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:onClick="cancelAndReturnToMainMenu"
+                android:text="Cancel" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
